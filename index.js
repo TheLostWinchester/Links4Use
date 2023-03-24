@@ -10,7 +10,7 @@ app.listen(3000,()=>{
 })
 app.get('/',(req,res)=>{
     try {
-        res.render('teste', {links: links, redes: redes})
+        res.render('index', {links: links, redes: redes})
     } catch (error) {
         res.send ("erro")
     }
