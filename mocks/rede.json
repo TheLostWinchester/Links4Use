@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "nome": "Caminho de Rede 1",
+        "caminho": "\\\\rede\\teste",
+        "observacao": "Acesso somente interno"
+    },
+    {
+        "id": 2 ,
+        "nome": "Caminho de rede 2" , 
+        "caminho": "\\\\rede2\\master",
+        "observacao": "Somente para a gerência"
+    },
+    {
+        "id": 3 ,
+        "nome": "Caminho de rede 3" ,
+        "caminho": "\\\\rede\\quebragelo",
+        "observacao": "Somente em horário próprio"
+    },
+    {
+        "id": 4 ,
+        "nome": "Caminho de rede 4" ,
+        "caminho": "\\\\rede2\\github" ,
+        "observacao": "Armazene seu código somente em sua pasta e não mexa em pasta alheia"
+    },
+    {
+        "id": 5 ,
+        "nome": "Caminho de rede 5" ,
+        "caminho": "\\\\redeoffs\\planta" ,
+        "observacao": "Rede para armazenamento de plantas offshore"
+    }
+]

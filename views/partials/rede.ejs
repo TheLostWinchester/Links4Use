@@ -1,0 +1,28 @@
+<div class="row row-cols-1 row-cols-md-2 g-4 mt-1 mr-0 ml-0 mb-3">
+            <div class="card h-100 bg-dark" id="cardRedes" style="width: 90%;">
+                <table class="table table-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col" id="catNome">Nome</th>
+                            <th scope="col" id="catCaminho">Caminho</th>
+                            <th scope="col" id="catObservacao">Observação</th>
+                        </tr>
+                    </thead>
+                    <tbody  id="tablWays">
+                        <% redes.forEach(categoria => { %>
+                        <tr>
+                            <td>
+                                <%= categoria.nome %>
+                            </td>
+                            <td>
+                                <%= categoria.caminho %>
+                            </td>
+                            <td>
+                                <%= categoria.observacao %>
+                            </td>
+                        </tr>
+                        <% }); %>
+                    </tbody>
+                </table>
+            </div>
+</div>
