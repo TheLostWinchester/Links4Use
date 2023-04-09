@@ -3,7 +3,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000000">
             <div class="container-fluid">
               <a class="navbar-brand" href="#"style="font-size: xx-large; margin-right: 80px;">Links4Use</a>
-              <input class="form-control" type="text" id="filterInput" onkeyup="filtrar()" placeholder="Pesquise um caminho...">
+              <input class="form-control" type="text" id="filterInput" placeholder="Pesquise um caminho...">
             </div>
         </nav>  
       <div class="d-flex" style="margin-top: 2%;">
@@ -19,7 +19,7 @@
         var $rows = $('#tablWays tr');
         $('#filterInput').keyup(function() {
 
-            var val = '^(?=.*\\b' + $.trim($(this).val()).split(/\s+/).join('\\b)(?=.*\\b') + ').*$',
+            var val = '(' + $.trim($(this).val()).split(/\s+/).join(')|(') + ')'.replace('|()',''),
                 reg = RegExp(val, 'i'),
                 text;
 
